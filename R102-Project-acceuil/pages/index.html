@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Projet Robotino</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
+  <link rel="stylesheet" href="../styles/projet.css" />
+  <script src="https://kit.fontawesome.com/037299dd1d.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/ynh_portal.js"></script><link type="text/css" rel="stylesheet" href="/ynh_overlay.css"><script type="text/javascript" src="/ynhtheme/custom_portal.js"></script><link type="text/css" rel="stylesheet" href="/ynhtheme/custom_overlay.css"></head>
+
+<body>
+  <header>
+    <menu>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Planning</a></li>
+          <li><a href="#">Capteurs</a></li>
+          <li><a href="#">Démonstration</a></li>
+          <li><a href="#">Chaine énergie</a></li>
+          <li><a href="#">Graphe liaisons</a></li>
+          <li><a href="#">Schéma cinématique</a></li>
+          <li><a href="#">Servo moteur & Bras</a></li>
+          <li><a href="#">Calculs</a></li>
+          <li><a href="#">Programmation</a></li>
+          <li><a href="accueilAN.html">Anglais</a></li>
+        </ul>
+      </div>
+    </menu>
+  </header>
+
+  <div class="remonter">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <main class="Loop js-loop">
+    <!-- ROBOTINO HOME -->
+    <section class="title containerElements">
+      <h1 class="titleRobotino">ROBOTINO</h1>
+      <i class="fas fa-angle-double-down"></i>
+    </section>
+    <!-- ROBOTINO HOME -->
+
+    <!-- 2 -->
+
+    <section class="containerElements planing">
+      <p class="titreContain">Planning</p>
+      <p class="paragrapheGantt">Nous avons crée un planning par gantt qui nous sert à planifier le délai des taches
+        réparties</p>
+
+      <div class="assListImg">
+        <ul class="listEvents">
+          <li>Définir la liaison sous sw</li>
+          <li>Desiner le schéma cinématique (inskcape)</li>
+          <li>Réaliser la laisons sous sw</li>
+          <li>Concevoir la liaison intrene au bras</li>
+          <li>Choisir l'alimentation et la carte de commande</li>
+          <li>Choix de la motorisation</li>
+          <li>Programmer la carte de commaned du bras</li>
+          <li>Prévoir l'IHM</li>
+          <li>Réaliser la liaison</li>
+          <li>Dessiner le schéma cinématique</li>
+          <li>Définir la liaison</li>
+          <li>Concevoir la laisons avec le châssis</li>
+          <li>Création d'un site internet</li>
+          <li>Création d'un diaporama</li>
+          <li>Création d'un exposé</li>
+        </ul>
+        <img width="50%" src="../images/CARTE MENTAL.svg" alt="">
+        <!--           <img class="imgGannt" src="./src/images/ganttImage.png" alt="">
+  
+ -->
+      </div>
+
+    </section>
+
+    <!-- 3 -->
+
+    <section class="containerElements capteurs">
+      <p class="titreContain">Capteurs</p>
+      <p class="capteurDesc">
+        Inventaire des capteurs de la plate-forme robotino et de leur emplacement avec une image et une nomenclature.
+      </p>
+      <div class="containerImagesCapteurs">
+        <img src="https://www.festo-didactic.com/ov3/media/customers/1100/robotinodistancesensors_1.png" alt="" />
+        <img src="../images/capteurRobotino.png" alt="">
+        <img src="../images/descriptionCaptuer.png" alt="">
+      </div>
+      
+    </section>
+
+    <!-- 4 -->
+
+    <section class="containerElements demonstration">
+      <p class="titreContain demoTitre">Démonstration</p>
+      <div class="videos">
+        
+        <div class="video">
+          <video controls style="width: 30%;" src="../videos/RobotinoLuca.mp4.mov"></video>
+          <video controls style="width: 30%;" src="../videos/videoNicolas.mp4"></video>
+
+        </div>
+
+        <div class="video" style="padding-top: 50px;">
+          <video muted  controls style="width: 30%;" src="../videos/videoGuilaume.MOV"></video>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <!-- 5 -->
+
+    <section class="containerElements chaine">
+      <p class="titreContain">Chaine d'énergie</p>
+
+      <div style="text-align: center;padding-top: 150px;" class="containerImageChaine">
+        <img style="margin: 0 auto;width: fit-content;" src="../images/chaine d'energie bras.png" alt="" />
+
+      </div>
+    </section>
+
+    <!-- 6 -->
+
+    <section class="containerElements graphe">
+      <p class="titreContain">Graphe des liaisons</p>
+
+      <div class="twoSeparation grapheInline">
+        <div class="oneSep">
+          <p class="descriptionOneSep pSchema2d">
+            Nous avons établie un graphe des liaisons du pignon réducteur qui nous à permit d'optimiser son
+            dimensionnement et la conception de ses lois de commande.
+          </p>
+         
+        </div>
+        <div class="twoSep">
+          <img width="30%" class="imgTwoSep imgGraphe" src="../images/graphe liaison transmission francais.svg" alt="" />
+          <img width="30%" class="imgTwoSep imgGraphe" src="../images/Graphe des liaisons du bras.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 -->
+
+    <section class="containerElements cinematique">
+      <p class="titreContain">Schéma cinématique</p>
+
+      <div class="twoSeparation">
+        <div class="oneSep">
+          <p class="descriptionOneSep pSchema2d">
+            Schéma cinématique nous a permit de représenter un mécanisme qui met en
+            évidence les possibilités de mouvements relatifs entre les groupes cinématiquement liés.
+            <br />
+            <span onclick="schema2d.classList.toggle('bckd')" class="infoImageClique">Cliquez sur l'image pour
+              mieux voir</span>
+          </p>
+        </div>
+        <div class="twoSep schema2d">
+          <img class="imgTwoSep" src="../images/schema 2D.svg" alt="" />
+          <img class="imgTwoSep" src="../images/schéma 3D.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 -->
+
+    <section class="containerElements moteur"> 
+      <div class="twoSections" style="display: flex;justify-content: space-between;">
+        <div>
+          <p class="titreContain">Servo moteur</p>
+          <div class="containServoMoteur">
+            <p class="descriptionServoMoteur">Le servo moteur est un moteur capable de maintenir une opposition à un effort
+              statique et dont la position est vérifiée en continue et corrigé en fonction de la mesure. IL permet de
+              diriger le bras et de la maintenir.</p>
+          </div>
+          <div class="imgServoMoteur">
+            <img src="../images/servo.png" alt="">
+          </div>
+        </div>
+        
+        <div>
+          <p class="titreContain">Bras</p>
+          <div style="display: flex; flex-direction: column; align-items: center;" class="containerIMageServo">
+            <img width="50%" style="margin-bottom: 50px;margin-top: 50px;" src="../images/Schema détaillé du bras anglais.png" alt="" srcset="">
+            <div class="containerDownload">
+              <a class="linkSche" target="_blank" href="../images/Schema détaillé du bras anglais.png">Télécharger</a>
+            </div>
+
+            <img width="50%" src="../images/Schema detaillé du bras entier anglais.png" alt="" srcset="">
+            <div class="containerDownload">
+              <a class="linkSche" target="_blank" href="../images/Schema detaillé du bras entier anglais.png">Télécharger</a>
+            </div>
+
+          </div>
+        </div>
+        </div>
+
+        
+    </section>
+
+
+    <!-- 9 -->
+
+    <section class="containerElements sectionCalcul">
+      <p class="titreContain">Calculs</p>
+      <div class="contCalcul">
+        <p>P = ma x g = 10 x 10 = 100m/s</p>
+        <p>Cm = PxA + PxB</p>
+        <p>g = 9,81m/s soit 10m par seconde</p>
+        <p>anneau = Pa = Ma = 10g</p>
+
+      </div>
+
+      <div class="contCalcul">
+        <p>
+          Mb = 885,05 <br> g A=0,11455m² <br> G=9,81 <br> C = mb×a×g <br> C = 885,04g×0,11455m²×9,81 <br> C = 994,55 Nm
+
+        </p>
+      </div>
+
+    </section>
+
+    <!-- 10 -->
+
+    <section class="containerElements programmation">
+      <p class="titreContain">Programmation</p>
+      <div class="descriptionProgrammationCont">
+        <p class="pProgrammation">Pour la partie de programmation du site web nous avons utilisé le language de programmation HTML,
+          CSS, et un peu de JavaScript pour animé le site.</p>
+        <p class="linkInfoLogos">Pour plus d'informations cliquez sur les logos ci-dessous</p>
+        <div class="inlineLogo">
+            <a target="_blank" href="https://developer.mozilla.org/fr/docs/Web/JavaScript">
+                <i class="fab fa-js"></i>
+            </a>
+            <a target="_blank" href="https://developer.mozilla.org/fr/docs/Web/HTML">
+                <i class="fab fa-html5"></i>
+            </a>
+            <a target="_blank" href="https://developer.mozilla.org/fr/docs/Web/CSS">
+                <i class="fab fa-css3-alt"></i>
+            </a>
+        </div>
+
+      </div>
+      <img src="" alt="" />
+    </section>
+  </main>
+
+  <script src="../js/app.js"></script>
+  <script src="https://kit.fontawesome.com/98e369f5d7.js" crossorigin="anonymous"></script>
+  <script src="../lib/gsap-public/minified/gsap.min.js"></script>
+
+</body>
+
+</html>

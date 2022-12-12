@@ -1,0 +1,125 @@
+body {
+  background: url("../images/fond.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  font-family: arial;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+.ml9 {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  font-weight: 200;
+  font-size: 5em;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+.nomsPrenoms {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  font-size: large;
+}
+
+.prenom {
+  margin: 5px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.nom {
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+
+}
+
+.nom::after { /* souligné les nom de famille */
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0%;
+}
+
+.nom:hover::after { /*l'animation*/
+  width: 100%;
+  left: 0%;
+}
+
+.projet { /*positioné le "accès au présentation"*/
+  position: absolute; 
+  top: 90%; 
+  left: 0%; 
+  transform: translate(0%, -85%);
+  
+}
+
+.projetDesciprtion { /*mise en page du petit paragraphe au dessus du "accès ..." */
+  margin-top: 250px;
+  margin-left: 50px;
+  padding-left: 10px;
+  border-left: 2px solid #FDE200 ;
+  max-width: 350px;
+}
+
+.projetDesciprtion p { /*style du texte*/
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.enSavoirPlus {/*mise en page de "accès ..."*/ 
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 3px;
+  display: inline-block;
+  position: relative;
+}
+.enSavoirPlus::after { /*la ligne en dessous du "accès"*/
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 0%;
+  position: absolute;
+  background: #FDE200;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 100%;
+}
+
+.enSavoirPlus:hover::after {/*faire bouger la ligne quand on met le curseur dessus */
+  width: 0%;
+  left: 0%;
+}
+
+.descriptionAccueilProjet { /*mise en page*/
+  line-height: 30px;
+  font-size: 1.2em;
+}

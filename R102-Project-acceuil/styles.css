@@ -1,0 +1,12 @@
+@font-face {
+	font-family: "principale";
+	src: url("./src/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: principale;
+	scroll-behavior: inherit;
+}
+
